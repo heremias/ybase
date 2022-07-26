@@ -30,6 +30,7 @@ RUN set -ex; \
 	apt-get install -y --no-install-recommends \
     autoconf \
     build-essential \
+	bash-completion \
     apt-utils \
 	zlib1g-dev \
     libzip-dev \

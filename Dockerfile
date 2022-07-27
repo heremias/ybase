@@ -92,7 +92,7 @@ RUN . ~/.profile
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin -- --filename=composer
 #RUN php -r "readfile('http://files.drush.org/drush.phar');" > drush && chmod +x drush && mv drush /usr/bin/
 # Create directories for Drupal
-RUN wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar
+RUN curl -sS https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar
 RUN chmod +x drush.phar
 RUN mv drush.phar /usr/local/bin/drush
 RUN mkdir -p /tmp/drupal && chown www-data:www-data /tmp/drupal

@@ -3,19 +3,19 @@ composer config -g allow-plugins.composer/installers true
 composer config -g allow-plugins.drupal/core-composer-scaffold true
 composer config -g allow-plugins.drupal/core-project-message true
 composer config -g allow-plugins.oomphinc/composer-installers-extender true
-composer global require consolidation/cgr
+#composer global require consolidation/cgr
 #Run composer create project by Drupal verion, could be set to latest
 composer create-project drupal/recommended-project:9.4.3 drupal
 
 
 #Link Drush
-#ln -s /root/.composer/vendor/bin/drush /usr/local/bin/drush
+ln -s /root/.composer/vendor/bin/drush /usr/local/bin/drush
 
 #Configure Drush
 #composer global require drush/drush
 cd drupal
 #rm -rf vendor/bin/drush
-cgr drush/drush
+#cgr drush/drush
 composer global update
 
 #Run composer (note. composer is running as root, no composer in prod )

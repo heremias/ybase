@@ -11,14 +11,14 @@ composer create-project drupal/recommended-project:9.4.3 drupal
 ln -s /root/.composer/vendor/bin/drush /usr/local/bin/drush
 
 #Configure Drush
-#composer global require drush/drush
+composer global require drush/drush
 cd drupal
 rm -rf vendor/bin/drush
 composer global update
 
 #Run composer (note. composer is running as root, no composer in prod )
 composer install --no-interaction
-composer require drush/drush
+#composer require drush/drush
 
 #set permissions file system
 chmod 777 web/sites/default

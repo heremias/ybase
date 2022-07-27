@@ -11,7 +11,7 @@ composer create-project drupal/recommended-project:9.4.3 drupal
 ln -s /root/.composer/vendor/bin/drush /usr/local/bin/drush
 
 #Configure Drush
-composer global require drush/drush
+#composer global require drush/drush
 cd drupal
 rm -rf vendor/bin/drush
 composer global update

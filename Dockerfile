@@ -90,7 +90,7 @@ RUN . ~/.profile
 
 #Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin -- --filename=composer
-
+RUN php -r "readfile('http://files.drush.org/drush.phar');" > drush && chmod +x drush && mv drush /usr/bin/
 # Create directories for Drupal
 RUN mkdir -p /tmp/drupal && chown www-data:www-data /tmp/drupal
 RUN chown www-data:www-data /var/www --recursive

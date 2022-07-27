@@ -7,11 +7,12 @@ composer config -g allow-plugins.oomphinc/composer-installers-extender true
 #Run composer create project by Drupal verion, could be set to latest
 composer create-project drupal/recommended-project:9.4.3 drupal
 
+
 #Link Drush
 ln -s /root/.composer/vendor/bin/drush /usr/local/bin/drush
 
 #Configure Drush
-composer global require drush/drush
+#composer global require drush/drush
 cd drupal
 rm -rf vendor/bin/drush
 composer global update

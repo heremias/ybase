@@ -20,7 +20,7 @@ composer global update
 
 #Run composer (note. composer is running as root, no composer in prod )
 composer install --no-interaction
-#composer require drush/drush
+composer require drush/drush
 
 #set permissions file system
 chmod 777 web/sites/default

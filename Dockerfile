@@ -50,7 +50,7 @@ RUN set -ex; \
 	git \
 	wget; \
     docker-php-ext-configure gd --with-freetype --with-jpeg --enable-gd; \
-    docker-php-ext-install gd opcache zip pdo_sqlite; \
+    docker-php-ext-install gd opcache zip pdo_sqlite pdo_mysql; \
     pecl install imagick; \
     docker-php-ext-enable imagick; \
 # reset apt-mark's "manual" list so that "purge --auto-remove" will remove all build dependencies

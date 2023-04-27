@@ -1,6 +1,6 @@
 # Force redeploy
 
-name: "y-leg"
+name: "y-stage"
 
 on:
   push:

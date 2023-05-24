@@ -5,7 +5,7 @@ composer config -g allow-plugins.drupal/core-project-message true
 composer config -g allow-plugins.oomphinc/composer-installers-extender true
 #composer global require consolidation/cgr
 #Run composer create project by Drupal verion, could be set to latest
-composer create-project drupal/recommended-project:9.4.4 drupal
+composer create-project drupal/recommended-project:9.4.15 drupal
 
 
 #Link Drush

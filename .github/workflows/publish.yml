@@ -59,6 +59,14 @@ jobs:
           username: ${{ env.CONTAINER_REGISTRY_USERNAME }}
           password: ${{ env.CONTAINER_REGISTRY_PASSWORD }}
 
+      #GHCR login
+      - ​name​: ​Login to GHCR 
+​      ​uses​: ​docker/login-action@v1  
+​      ​with​: 
+​        ​registry​: ​ghcr.io 
+​        ​username​: ${{ env.CONTAINER_REGISTRY_USERNAME }} 
+​        ​password​: ​${{ env.CONTAINER_REGISTRY_PASSWORD }}
+
       # Build Docker image with a :latest and :<git sha> tag
       - name: Docker build
         uses: docker/build-push-action@v4

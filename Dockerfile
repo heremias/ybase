@@ -108,7 +108,7 @@ COPY .htaccess /var/www
 
 # node & yarn
 RUN apt-get update && apt-get install -y nodejs npm
-RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
+RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
 RUN npm i -g yarn
 
 #Run base Drupal build with drush and composer

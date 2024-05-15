@@ -112,6 +112,6 @@ RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
 RUN npm i -g yarn
 
 #Run base Drupal build with drush and composer
-RUN ./build.sh
+#RUN ./build.sh
 
 #EXPOSE 80

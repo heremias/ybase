@@ -1,0 +1,15 @@
+# Copyright Broadcom, Inc. All Rights Reserved.
+# SPDX-License-Identifier: APACHE-2.0
+
+annotations:
+  category: CMS
+  licenses: Apache-2.0
+  images: |
+    - name: drupal
+      image: ghcr.io/heremias/ybase:sha256-258e60434c162fa47a2d51fd205bf134e7f425a1a9eff3b31c5131f66a56ec5a.sig
+apiVersion: v2
+appVersion: 10.3.1
+name: drupal
+sources:
+- https://gitlab.com/heremias/msd/tree/main/drupal
+version: 19.0.4
